@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Bmw</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Judson:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+
+      body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+        
+       .nav{
+        margin: 30px;
+        box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+        height: 65px;
+        display: flex;
+        align-items: center;
+        padding:10px 80px;
+
+       }
+       .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+       }
+       .left{
+        display: flex;
+        align-items: center;
+       }
+       .left p{
+        font-size: 20px;
+       }
+       .line{
+        height: 40px;
+        border: 1px solid black;
+        margin: 0 10px;
+       }
+       .right{
+         width: 810px;
+        display: flex;
+        gap: 10px;
+        white-space: nowrap;
+       }
+       .item a{
+        text-decoration: none;
+         color: black;
+        font-size: 20px;
+        
+       }
+     
+       .item{
+       height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:4px 12px;
+       }
+       .item:hover{
+         
+        background-color: #467CD8;
+         
+       }
+       .item:hover a{
+        color: white;
+       }
+       /*  */
+       .hero_section{
+        margin-top: 30px;
+        display: flex;
+        height: 500px;
+        width: 90%;
+        margin: 10px auto;
+        margin-right: 0;
+       
+        padding-right: 0;
+        justify-content: center;
+    
+ 
+        
+       }
+       .hero_section_left{
+        width: 60%;
+        height: 450px;
+        padding-top: 100px;
+       }
+       .hero_section_left span{
+        font-size: 20px;
+        font-family:  Helvetica, sans-serif;
+       }
+
+       .hero_section_right{
+       position: relative;
+       left: 7px;
+        margin-top: 20px;
+        width: 100%;
+        height: 450px;
+        background-color: black;
+       }
+       .hero_section_right video{
+        width: 100%;
+        border-radius: 10px;
+       }
+       .hero_section_middle{
+        font-size: 40px;
+        height: 150px;
+        width: 400px;
+        margin-top: 20px;
+        
+        font-family:'Montserrat','open sans';
+       }
+       .hero_section_footer{
+        margin-top: 5rem;
+       }
+       .hero_section_footer button{
+        width: 180px;
+        height: 50px;
+        background-color: blue;
+        color: white;
+        font-size: 20px;
+        border: none;
+        
+       }
+
+       /* --------------------------------- Section 2*/
+       .section2{ display: flex; margin-top: 100px; justify-content: center; align-items: center; gap: 10px; margin-bottom: 150px; }
+       .section2_card{ width: 600px; }
+       .section2_card video{ width: 100%;}
+       .section2_card_content{margin-top: 20px; padding-left: 60px;}
+       .section2_card_content span{ font-size: 20px;font-weight: 600;}
+       .section2_card_content p{ font-size: 30px;}
+
+       /* _________________________section3 */
+    .section3 { margin:80px 0 120px; }
+    .section3_row { display:flex; gap:18px; justify-content:center; width:90%; margin:0 auto; }
+    .section3_card { width:33.333%; min-width:260px; }
+    .section3_card video { width:100%; height:260px; object-fit:cover; border-radius:2px; display:block; transition:filter .25s, transform .25s; }
+    .section3_card video:hover { filter:brightness(.75); transform:scale(1.02); }
+    .section3_card_content { margin-top:14px; }
+    .section3_card_content span { font-size:14px; color:#666; font-weight:600; display:block; }
+    .section3_card_content p { font-size:20px; margin:8px 0 0; font-weight:600; }
+
+
+    .section4{ display:flex; flex-direction: column; height: 600px; }
+    .section4 span{font-size: 50px; line-height: 55px; margin-bottom: 60px; padding-left: 140px; }
+    .section4_cards_container {display: flex;gap: 20px;align-items: center; height: 500px;  justify-content: center;}
+    .section4_card{height: 300px; width: 180px; transition: all 0.3s ease;   }
+    .section4_card video{ width: 100%; height: 100%; object-fit: cover;  display: block;}
+    .section4_card img{ width: 100%; height: 100%; object-fit: cover; display: block;}
+    .section4_card span{ font-size: 16px; font-weight: bold; padding-left: 0px; } 
+    .section4_card:hover { width: 330px; height: 450px;}
+
+    /* _________________section5 */
+    .section5{ display: flex; padding-left: 140px; margin: 200px 0px;  }
+    .section5_video{ width: 550px; height: 300px;}
+    .section5_video video{ height: 100%; width: 100%;  object-fit: cover; }
+    .section5_card{  width: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+    .section5_card span{ font-size: 30px;}
+    .section5_card p{ align-self: flex-start;padding-left: 130px; font-weight: 900; font-size: 20px;}
+    /* _____________________________Footer */
+    .footer-dark {
+    background: #1e1e1e;
+    color: #cfcfcf;
+    padding: 48px 4px 56px;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .footer-dark .languages {
+    display:flex;
+    gap:18px;
+    align-items:center;
+    color:#e9e9e9;
+    margin-bottom:28px;
+    flex-wrap:wrap;
+  }
+
+  .footer-dark .languages .active {
+    color:#fff;
+    font-weight:600;
+  }
+
+  .footer-dark .footer-grid {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:32px;
+    max-width:1200px;
+    margin: 0 auto;
+    align-items:start;
+  }
+
+  .footer-dark h6 {
+    color:#eeeeee;
+    font-size:16px;
+    margin:0 0 12px;
+    font-weight:700;
+    letter-spacing:0.1px;
+    position: relative;
+    padding-bottom: 8px;
+  }
+  .footer-dark h6::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 170px;           
+      height: 1px;
+      background-color: rgba(255,255,255,0.2);  
+    }
+  .footer-dark ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+
+  .footer-dark li {
+    margin:10px 0;
+  }
+
+  .footer-dark a {
+    color: #cfcfcf;
+    text-decoration:none;
+    transition: color .18s ease;
+    font-weight:400;
+  }
+
+  .footer-dark a:hover { color:#ffffff; text-decoration:underline; }
+
+ 
+/* copyright row */
+.footer-dark .footer-bottom {
+  margin-top:28px;
+  border-top: none;
+  padding-top:20px;
+  max-width:1200px;
+  margin-left:auto;
+  margin-right:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+  color:#ffffff;
+  font-weight: 400;
+  font-size:14px;
+}
+    </style>
+</head>
+<body>
+    <!-- Nav Bar Code____________________________________ -->
+     <div class="nav">
+        <div class="row">
+            <div class="left">
+                <img src="/images/bmwLogo.svg" width="48">
+                <div class="line"></div>
+                <p>Sheer Driving <strong>Pleasure</strong></p>
+
+            </div>
+            <div class="right">
+                    <div class="item"> <a href="#">Home</a></div>
+                    <div class="item"> <a href="#">Circular World</a> </div>
+                    <div class="item">   <a href="#">Digital Journey</a></div>
+                    <div class="item"> <a href="#">Electric Future</a></div>
+                    <div class="item"> <a href="#">Freude</a></div>
+                    <div class="item"><a href="#">Models</a></div>
+                    <div class="item"> <a href="#"><img src="/images/search.svg" width="20" alt=""></a></div>
+            </div>
+        </div>
+     </div>
+     <!-- Main Section -->
+      <main>
+        <section class="hero_section">
+            <div class="hero_section_left">
+                <span>Inside Neue Klasse</span>
+                <div class="hero_section_middle">
+                    A vedio series with people at BMW Shaping the Future
+                </div>
+                <div class="hero_section_footer">
+                    <button>Read More <img src="/images/right_arrow.svg" width="15"></button>
+                </div>
+
+
+            </div>
+            <div class="hero_section_right">
+                   <video   autoplay muted playsinline loop>
+                    <source src="/vedios/bmw.mp4">
+                   </video>
+            </div>
+
+        </section>
+
+        <section class="section2">
+            <div class="section2_card">
+                <video width="400" autoplay muted playsinline loop>
+                    <source src="/vedios/vedio1.mp4" type="video/mp4">
+                </video>
+                <div class="section2_card_content">
+                    <span>Inside Neue Klasse</span>
+                    <p>THE NEUE KLASSE -SEAMLESS BY DESIGN</p>
+                </div>
+            </div>
+             <div class="section2_card">
+                <video width="400" autoplay muted playsinline loop>
+                    <source src="/vedios/vedio2.mp4" type="video/mp4">
+                </video>
+                <div class="section2_card_content">
+                    <span>Inside Neue Klasse</span>
+                    <p>BMW HypersonX - The Invisible Art of Driving Sound</p>
+                </div>
+            </div>
+        </section>
+        <section class="section4">
+          <span>STAY UP TO DATE WITH BMW.</span>
+          <div class="section4_cards_container">
+            <div class="section4_card  ">
+               <video  autoplay muted playsinline loop>
+              <source src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/freude/notes/sky-00-teaser-home.mp4">
+            </video>
+            <span>All news</span>
+            </div>
+            <div class="section4_card">
+               <video  autoplay muted playsinline loop>
+              <source src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/freude/notes/n-32-media-high.mp4">
+            </video>
+            <span>Electric Lifestyle</span>
+
+          </div>
+            <div class="section4_card">
+               <img src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/freude/notes/n-30-media-high.jpg?imwidth=1280"   alt="">
+             <span>The Ryder Cup live</span>   
+            </div>
+          
+            <div class="section4_card">
+               <img src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/freude/notes/n-28-media-high.jpg?imwidth=1280"  alt="">
+             <span>Art Basel Basel 2025</span>   
+
+            </div>
+            
+            <div class="section4_card">
+               <video  autoplay muted playsinline loop>
+              <source src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/freude/notes/n-26-media-high.mp4">
+            </video>
+             <span>The first BMW fragrar</span>  
+          </div>
+
+          </div>
+        </section>
+
+        <section class="section5">
+         <div class="section5_video">
+           <video width="400" autoplay playsinline loop >
+            <source src="https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/Automotive%20Life/bmw-explained-logo/exl-01-stage-hd9.mp4">
+          </video>
+         </div>
+          <div class="section5_card">
+            <span>BECOME A BMW EXPERT</span>
+            <P>> BMW Explained</P>
+          </div>
+        </section>
+      
+        <section class="section3">
+      <div class="section3_row">
+        <div class="section3_card">
+          <video autoplay muted loop playsinline preload="metadata">
+            <source src="/vedios/light-01-stage-hd.mp4" type="video/mp4">
+          </video>
+          <div class="section3_card_content">
+            <span>BMW Explained</span>
+            <p>Milestones in BMW Lighting Design</p>
+          </div>
+        </div>
+
+        <div class="section3_card">
+          <video autoplay muted loop playsinline preload="metadata">
+            <source src="/vedios/eng-01-stage-hd.mp4" type="video/mp4">
+          </video>
+          <div class="section3_card_content">
+            <span>Technology</span>
+            <p>Technological Highlights: 15 Exceptional BMW Engines</p>
+          </div>
+        </div>
+
+        <div class="section3_card">
+          <video autoplay muted loop playsinline preload="metadata">
+            <source src="/vedios/af-01-stage-hd.mp4" type="video/mp4">
+          </video>
+          <div class="section3_card_content">
+            <span>Technology</span>
+            <p>BMW Innovations Ahead of Their Time</p>
+          </div>
+        </div>
+      </div>
+    </section>
+        
+      </main>
+       <footer class="footer-dark" role="contentinfo" aria-label="Site footer">
+      <div class="container" style="max-width:1200px;margin:0 auto">
+        <!-- languages row -->
+        <div class="languages" aria-hidden="false" style="margin-bottom:18px">
+          <div class="active">English</div>
+          <div>Deutsch</div>
+          <div>Italiano</div>
+          <div>Français</div>
+          <div>Español</div>
+          <div>日本語</div>
+        </div>
+
+        <!-- 4-column link grid -->
+        <div class="footer-grid" role="navigation" aria-label="Footer links">
+          <div>
+            <h6>Quick Links</h6>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">BMW in your country</a></li>
+              <li><a href="#">BMW Group Careers</a></li>
+              <li><a href="#">EU Detergents Regulation</a></li>
+              <li><a href="#">REACH Regulation</a></li>
+              <li><a href="#">Compatibility Check</a></li>
+              <li><a href="#">Connected Test Vehicle</a></li>
+              <li><a href="#">Cooperation Test Car</a></li>
+              <li><a href="#">EU Battery Regulation </a></li>
+              <li><a href="#">Parking Test Car</a></li>
+
+              <li><a href="#">Recalls and Technical Updates</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h6>More BMW Websites</h6>
+            <ul>
+              <li><a href="#">BMW M</a></li>
+              <li><a href="#">BMW M Motorsport</a></li>
+              <li><a href="#">BMW Golfsport</a></li>
+              <li><a href="#">BMW M Driving Experience</a></li>
+              <li><a href="#">BMW Welt</a></li>
+              <li><a href="#">BMW Group Classic</a></li>
+              <li><a href="#">BMW Corporate / Direct Sales</a></li>
+              <li><a href="#">BMW Group</a></li>
+              <li><a href="#">BMW Group Cultural Engagement</a></li>
+              <li><a href="#">BMW ConnectedDrive Upgrades</a></li>
+
+            </ul>
+          </div>
+
+          <div>
+            <h6>BMW.com</h6>
+            <ul>
+              <li><a href="#">About BMW.com</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Cookies</a></li>
+              <li><a href="#">Imprint</a></li>
+              <li><a href="#">Legal Notice / Data protection</a></li>
+              <li><a href="#">Accessibility</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h6>Visit us on</h6>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">X</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- bottom copyright row -->
+        <div class="footer-bottom" role="note">
+          <div>© BMW AG 2025</div>
+  
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
